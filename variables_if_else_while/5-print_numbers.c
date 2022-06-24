@@ -6,9 +6,8 @@
  * Return: Aways 0
  */
 int main(void)
-{
-	int num = 0;
-	for (num = 1; 1 <= 9; num++)
+{	int num;
+	for (num = 0; num <= 9; num++)
 	{
 		printf("%d",num);
 	}
