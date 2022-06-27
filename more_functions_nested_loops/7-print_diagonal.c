@@ -1,18 +1,15 @@
 #include "main.h"
 
 /**
- * print_line - draws a straight line in the terminal.
- *
- * @n: ampount of "\\"
- *
- * Return: Void
+ * print_diagonal - draws a diagonal line on the terminal
+ * @n: number of times the character \ should be printed
  */
 
 void print_diagonal(int n)
 {
 	int count1, count2;
 
-	if (n > 0)
+	if (n > 1)
 	{
 		for (count1 = 0; count1 < n; count1++)
 		{
