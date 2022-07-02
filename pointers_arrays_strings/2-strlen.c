@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - updates the value of the variable
+ * _strlen - returns length of a string
  * @s: pointer to the variable to up
  **/
 int _strlen(char *s)
