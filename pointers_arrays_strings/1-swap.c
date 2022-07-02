@@ -2,10 +2,9 @@
 
 /**
  * swap_int - updates the value of the variable
- * @*a: pointer to the variable to update
- * @*b: another one
+ * @a: pointer to the variable to update
+ * @b: another one
  * */
-
 void swap_int(int *a, int *b)
 {
 	int n = *a;
