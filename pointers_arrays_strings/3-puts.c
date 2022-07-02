@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strlen - returns length of a string
- * @s: pointer to the variable to up
+ * _puts - returns length of a string
+ * @str: pointer to the variable to up
  * Return: the length of an string
  **/
 void _puts(char *str)
