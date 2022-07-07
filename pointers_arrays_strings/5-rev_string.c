@@ -1,26 +1,29 @@
 #include "main.h"
 
 /**
- * print_rev - returns length of a string
+ * rev_strings - returns length of a string
  * @s: pointer to the variable to up
  * Return: void
  **/
 void rev_string(char *s)
 {
-	int size = 0;
-	int n;
+	int i, len, len1;
+	char temp;
 
-	while (*s != '\0')
+	len = 0;
+	len1 = 0;
+
+	while (*s[len] != '\0')
 	{
-		_putchar(*s);
-		size++;
-		s++;
+		len++;
 	}
-	s--;
-	for (n = 0; n < size; n++)
+
+	len1 = len - 1
+	
+	for (i = 0; i < len / 2; i++)
 	{
-		_putchar(*s);
-		s--;
+		temp = s[i];
+		s[i] = s[len1];
+		s[len1--] = tmp;
 	}
-	_putchar('\n');
 }
