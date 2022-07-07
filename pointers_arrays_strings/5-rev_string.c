@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_strings - returns length of a string
+ * rev_string - returns length of a string
  * @s: pointer to the variable to up
  * Return: void
  **/
@@ -19,7 +19,7 @@ void rev_string(char *s)
 	}
 
 	len1 = len - 1;
-	
+
 	for (i = 0; i < len / 2; i++)
 	{
 		temp = s[i];
