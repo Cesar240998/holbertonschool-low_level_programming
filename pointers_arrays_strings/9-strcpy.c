@@ -8,7 +8,7 @@
  * @src: number of elements
  * Return: the pointer to dest
  */
-void *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int len, n;
 
