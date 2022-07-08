@@ -5,7 +5,7 @@
  * @a: first string
  * @n: second string
  */
-void reverse_array(int *a, int *b)
+void reverse_array(int *a, int n)
 {
 	int len, len1, temp;
 
