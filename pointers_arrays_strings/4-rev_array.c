@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_array - compares two strings
+ * reverse_array - compares two strings
  * @a: first string
  * @n: second string
  */
