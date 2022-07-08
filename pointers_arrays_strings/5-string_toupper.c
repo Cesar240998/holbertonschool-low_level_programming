@@ -3,6 +3,7 @@
 /**
  * string_toupper - compares two strings
  * @s: first string
+ * Return: the result
  */
 char *string_toupper(char *s)
 {
@@ -14,5 +15,5 @@ char *string_toupper(char *s)
 			s[len] = s[len] - 32;
 	}
 
-	return(s);
+	return (s);
 }
