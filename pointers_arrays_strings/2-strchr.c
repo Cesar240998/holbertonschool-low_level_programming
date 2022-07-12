@@ -9,10 +9,11 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int y;
+	char tmp;
 
-	for (y = 0; y < n; y++)
+	for (y = 0; s[y] != '\0'; y++)
 	{
-		if (s[y] = c)
+		if (s[y] == c)
 		tmp[] = s[y+1];
 	}
 
