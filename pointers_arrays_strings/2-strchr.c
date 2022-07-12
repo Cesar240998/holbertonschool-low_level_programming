@@ -8,13 +8,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int y;
-	char tmp;
+	unsigned int i;
+	char *tmp = NULL;
 
-	for (y = 0; s[y] != '\0'; y++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[y] == c)
-		tmp[] = s[y+1];
+		if (s[i] == c)
+		tmp = s[i+1];
 	}
 
 	return (temp);
