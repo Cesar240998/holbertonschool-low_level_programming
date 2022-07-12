@@ -7,7 +7,7 @@
  * @n: number of times to copy b
  * Return: pointer to the memory area s
  */
-char *_memset(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int y;
 
