@@ -4,7 +4,7 @@
 /**
  * _strspn - fills memory with a constant byte
  * @s: memory area to be filled
- * @c: char to copy
+ * @accept: char to copy
  * Return: pointer to the memory area s
  */
 unsigned int _strspn(char *s, char *accept)
@@ -13,10 +13,14 @@ unsigned int _strspn(char *s, char *accept)
 
 		for (i = 0; s[0] != '\0'; i++)
 		{
-			if (s[i] == accept [j])
+			flag = 0;
+			for (j = 0; accept[j]; j++)
 			{
+				if (s[i] == accept[j])
+				{
 				count++;
 				flag = 1;
+				}
 			}
 			if (flag == 0)
 				return (count);
