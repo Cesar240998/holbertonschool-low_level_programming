@@ -9,7 +9,7 @@
  *
  * Return: pointer to the array (Success), NULL (Error)
  */
-char **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	char **array;
 	unsigned int i, j;
