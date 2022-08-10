@@ -1,36 +1,46 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_to_98 - Prints all natural numbers from n to 98
- *
- * @num: delimiter (decides if the iterator add or substract)
- *
- * Return: void
+ * print_to_98 - prints all natural numbers from n to 98,
+ * followed by a new line
+ * @n: print from this number
  */
 
-void print_to_98(int num)
+void print_to_98(int n)
 {
-	int i;
-
-	if (num > 98)
+	if (n  <= 98)
 	{
-		for (i = num; i > 98; i--)
+		while (n <= 98)
 		{
-			printf("%d, ", i);
+			if (n != 98)
+				printf("%d, ", n);
+			else if (n == 98)
+				printf("%d\n", n);
+			n++;
 		}
 	}
-	else if (num < 98)
+	else
 	{
-		for (i = num; i < 98; i++)
+		while (n >= 98)
 		{
-			printf("%d, ", i);
+			if (n > 99)
+			{
+				_putchar((n / 100) + 48);
+				_putchar(((n / 10) % 10) + 48);
+				_putchar((n % 10) + 48);
+			}
+			else
+			{
+				_putchar((n / 10) + 48);
+				_putchar((n % 10) + 48);
+			}
+			if (n == 98)
+				break;
+			_putchar(44);
+			_putchar(32);
+			n--;
 		}
+		_putchar(10);
 	}
-
-	if (i == 98 || num == 98)
-	{
-		printf("%d", 98);
-	}
-
-	printf("\n");
 }
